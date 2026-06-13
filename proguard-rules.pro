@@ -1,0 +1,2 @@
+-keep class com.autoconfirm.app.** { *; }
+-keep class okhttp3.** { *; }

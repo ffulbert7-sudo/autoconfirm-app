@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0a0f1a">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:gravity="center"
+            android:paddingTop="32dp" android:paddingBottom="32dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="AutoConfirm" android:textColor="#00e5c0" android:textSize="32sp" android:textStyle="bold"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Agent Mobile v1.0" android:textColor="#8892a4" android:textSize="12sp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="@drawable/card_background"
+            android:padding="16dp" android:layout_marginBottom="16dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="STATUT" android:textColor="#8892a4" android:textSize="10sp" android:paddingBottom="12dp"/>
+            <TextView android:id="@+id/tvSmsStatus" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="SMS non verifie"
+                android:textColor="#e8eaf0" android:textSize="14sp" android:paddingBottom="8dp"/>
+            <TextView android:id="@+id/tvNotifStatus" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Notifications non verifiees"
+                android:textColor="#e8eaf0" android:textSize="14sp" android:paddingBottom="8dp"/>
+            <TextView android:id="@+id/tvConnectionStatus" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Non configure"
+                android:textColor="#e8eaf0" android:textSize="14sp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="@drawable/card_background"
+            android:padding="16dp" android:layout_marginBottom="16dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="CONFIGURATION" android:textColor="#8892a4" android:textSize="10sp" android:paddingBottom="16dp"/>
+            <EditText android:id="@+id/etServerUrl" android:layout_width="match_parent"
+                android:layout_height="48dp" android:background="@drawable/input_background"
+                android:textColor="#e8eaf0" android:hint="http://ip:3000"
+                android:textColorHint="#4a5568" android:inputType="textUri"
+                android:paddingStart="16dp" android:paddingEnd="16dp"
+                android:textSize="13sp" android:layout_marginBottom="16dp"/>
+            <EditText android:id="@+id/etToken" android:layout_width="match_parent"
+                android:layout_height="48dp" android:background="@drawable/input_background"
+                android:textColor="#e8eaf0" android:hint="votre-token-secret"
+                android:textColorHint="#4a5568" android:inputType="textPassword"
+                android:paddingStart="16dp" android:paddingEnd="16dp"
+                android:textSize="13sp" android:layout_marginBottom="16dp"/>
+            <Button android:id="@+id/btnSave" android:layout_width="match_parent"
+                android:layout_height="48dp" android:text="ENREGISTRER"
+                android:textColor="#0a0f1a" android:textStyle="bold"
+                android:background="@drawable/btn_primary"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="@drawable/card_background"
+            android:padding="16dp" android:layout_marginBottom="16dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="PERMISSIONS" android:textColor="#8892a4" android:textSize="10sp" android:paddingBottom="16dp"/>
+            <Button android:id="@+id/btnSmsPermission" android:layout_width="match_parent"
+                android:layout_height="48dp" android:text="1. AUTORISER SMS"
+                android:textColor="#00e5c0" android:textStyle="bold"
+                android:background="@drawable/btn_secondary" android:layout_marginBottom="12dp"/>
+            <Button android:id="@+id/btnNotifPermission" android:layout_width="match_parent"
+                android:layout_height="48dp" android:text="2. AUTORISER NOTIFICATIONS"
+                android:textColor="#00e5c0" android:textStyle="bold"
+                android:background="@drawable/btn_secondary" android:layout_marginBottom="12dp"/>
+            <Button android:id="@+id/btnTest" android:layout_width="match_parent"
+                android:layout_height="48dp" android:text="3. TESTER CONNEXION"
+                android:textColor="#0a0f1a" android:textStyle="bold"
+                android:background="@drawable/btn_primary" android:layout_marginBottom="12dp"/>
+            <Button android:id="@+id/btnKeepAlive" android:layout_width="match_parent"
+                android:layout_height="48dp" android:text="GARDER ACTIF (ECRAN ETEINT)"
+                android:textColor="#0a0f1a" android:textStyle="bold"
+                android:background="@drawable/btn_accent"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
